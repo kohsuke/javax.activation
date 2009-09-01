@@ -605,7 +605,12 @@ public class MailcapCommandMap extends CommandMap {
 		// if anything goes wrong, do it the old way
 		cl = Class.forName(name);
 	    }
-	    if (cl != null)		// XXX - always true?
+        if (!DataContentHandler.class.isAssignableFrom(cl)) {
+            if (LogSupport.isLoggable())
+                LogSupport.log("DCH " + name + " is of invalid type");
+            return null;
+        }
+        if (cl != null)		// XXX - always true?
 		return (DataContentHandler)cl.newInstance();
 	} catch (IllegalAccessException e) {
 	    if (LogSupport.isLoggable())
