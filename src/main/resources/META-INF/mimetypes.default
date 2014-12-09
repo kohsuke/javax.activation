@@ -20,6 +20,12 @@ audio/x-aifc		aifc
 audio/x-aiff            aif aiff
 audio/x-mpeg		mpeg mpg
 audio/x-wav             wav
+audio/mp3             mp3 MP3
 video/mpeg		mpeg mpg mpe
 video/quicktime		qt mov
-video/x-msvideo		avi
+video/x-msvideo		avi AVI
+video/mkv		mkv MKV
+video/mp4		mp4 MP4
+video/webm		webm WEBM
+video/flv		flv FLV
+video/x-flv		x-flv X-FLV
